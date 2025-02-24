@@ -16,24 +16,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQO-0y-ViZ">
-                                <rect key="frame" x="183" y="338" width="37" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOi-ab-k5g">
+                                <rect key="frame" x="50" y="504" width="129" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="eMd-2r-4Zo"/>
+                                    <constraint firstAttribute="width" constant="129" id="qhD-U2-fHX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Change Color"/>
+                                <connections>
+                                    <action selector="didTapChangeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZhS-W7-ibI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rev-Tu-xpq">
+                                <rect key="frame" x="284" y="504" width="68" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Iup-ba-ERV"/>
+                                    <constraint firstAttribute="width" constant="68" id="duK-1x-e9h"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Reset"/>
+                                <connections>
+                                    <action selector="didTapResetButon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qo3-jZ-yNb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQO-0y-ViZ">
+                                <rect key="frame" x="50" y="299" width="302" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="0XL-q6-mSn"/>
+                                    <constraint firstAttribute="width" constant="302" id="l3O-dB-WBb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VOi-ab-k5g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="1aR-T8-5FY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rev-Tu-xpq" secondAttribute="trailing" constant="50" id="MVp-2c-KC4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rev-Tu-xpq" secondAttribute="bottom" constant="301" id="OZM-Ir-eBc"/>
+                            <constraint firstItem="qQO-0y-ViZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="SFp-Ao-4cY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qQO-0y-ViZ" secondAttribute="trailing" constant="50" id="Xwv-2k-1SV"/>
+                            <constraint firstItem="qQO-0y-ViZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="237" id="cM6-kD-n53"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VOi-ab-k5g" secondAttribute="bottom" constant="301" id="n9G-XQ-1UZ"/>
+                            <constraint firstItem="VOi-ab-k5g" firstAttribute="top" secondItem="qQO-0y-ViZ" secondAttribute="bottom" constant="157" id="rLi-2Q-4rS"/>
+                            <constraint firstItem="rev-Tu-xpq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="442" id="wJc-Tg-EEK"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="changeButton" destination="VOi-ab-k5g" id="WZA-RN-XJV"/>
                         <outlet property="myLabel" destination="qQO-0y-ViZ" id="jtD-f8-oP2"/>
+                        <outlet property="myView" destination="8bC-Xf-vdC" id="I3N-OV-xmF"/>
+                        <outlet property="resetButton" destination="rev-Tu-xpq" id="JV9-l5-EmO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131" y="-27"/>
+            <point key="canvasLocation" x="129.85074626865671" y="-27.459954233409608"/>
         </scene>
     </scenes>
     <resources>
