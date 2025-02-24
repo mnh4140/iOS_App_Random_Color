@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ED7059FD2D6C49A8004484AD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ED7059FC2D6C49A2004484AD /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		ED7059DF2D6C4610004484AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		ED7059C82D6C460F004484AD /* iOS_App_Random_Color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_App_Random_Color.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7059DE2D6C4610004484AD /* iOS_App_Random_ColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_App_Random_ColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7059E82D6C4610004484AD /* iOS_App_Random_ColorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_App_Random_ColorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED7059FC2D6C49A2004484AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +93,7 @@
 		ED7059BF2D6C460F004484AD = {
 			isa = PBXGroup;
 			children = (
+				ED7059FC2D6C49A2004484AD /* README.md */,
 				ED7059CA2D6C460F004484AD /* iOS_App_Random_Color */,
 				ED7059E12D6C4610004484AD /* iOS_App_Random_ColorTests */,
 				ED7059EB2D6C4610004484AD /* iOS_App_Random_ColorUITests */,
@@ -225,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED7059FD2D6C49A8004484AD /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
